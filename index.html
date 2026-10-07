@@ -650,16 +650,31 @@ button { cursor: pointer; }
 }
 .review-room-tag {
   display: inline-block;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 0.22rem 0.6rem;
+  letter-spacing: 0.08em;
+  padding: 0.24rem 0.65rem;
   background: var(--surface-2);
   color: var(--pine-2);
   border: 1px solid var(--border);
   border-radius: 2px;
   margin-bottom: 1rem;
+}
+/* 객실별로 한눈에 구분되도록 */
+.review-room-tag.tag-maple {            /* 메이플 — 단풍색 */
+  background: #F7EEE2;
+  color: #8A4E13;
+  border-color: #E3CDB0;
+}
+.review-room-tag.tag-sat {              /* 샛별 — 밤하늘 */
+  background: #E6EDF5;
+  color: #2F4C70;
+  border-color: #C3D2E4;
+}
+.review-room-tag.tag-sol {              /* 솔솔하우스 — 솔빛 */
+  background: var(--surface-2);
+  color: var(--pine);
+  border-color: var(--border);
 }
 .review-text {
   font-size: 0.9rem;
@@ -1562,9 +1577,9 @@ footer {
       <div class="review-track">
         <div class="review-card active">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">메이플</span>
+          <span class="review-room-tag tag-maple">메이플</span>
           <p class="review-text">"공기도 좋고 기대했던거보다 더 좋았습니다. 호스트 내외분도 엄청 친절하셨어요!"</p>
-          <div class="review-date">2025년 12월 22일</div>
+          <div class="review-date">2025년 12월 22일 · 에어비앤비</div>
           <div class="review-host">
             <strong>호스트 답글</strong>
             좋은 후기 남겨주셔서 진심으로 감사합니다 😊 맑은 공기와 숙소를 기대 이상으로 좋게 느껴주셨다니 정말 기쁩니다. 편안하게 머무르실 수 있도록 항상 노력하고 있는데, 따뜻하게 봐주셔서 큰 힘이 됩니다. 다음에도 좋은 시간 보내실 수 있도록 정성껏 준비하겠습니다 🌿 언제든 다시 찾아주세요 😊
@@ -1572,7 +1587,7 @@ footer {
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">메이플</span>
+          <span class="review-room-tag tag-maple">메이플</span>
           <p class="review-text">"너무 좋아요. 자연속에 조용하고 깨끗한 숙소에서 가족들과 함께 편안하게 휴식을 즐겼습니다. 친절하신 호스트분들 덕분에 더욱 특별한 시간이 됐습니다!"</p>
           <div class="review-date">2026년 1월 5일</div>
           <div class="review-host">
@@ -1582,7 +1597,7 @@ footer {
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">샛별</span>
+          <span class="review-room-tag tag-sat">샛별</span>
           <p class="review-text">"호스트분들께서 친절하게 응대해주셔서 잘 지냈습니다. 숙소도 깨끗했고 자연 속에 있어서 공기도 좋았습니다. 감사합니다~"</p>
           <div class="review-date">2025년 9월 10일 · 에어비앤비</div>
           <div class="review-host">
@@ -1592,31 +1607,31 @@ footer {
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">메이플</span>
+          <span class="review-room-tag tag-maple">메이플</span>
           <p class="review-text">"초등 아이 2명과 평생 잊지 못할 추억을 남긴 곳입니다. 아이들은 마당있는 집이 좋다하였고, 바로 신발 신고 나와 배드민턴 친것도, 마당 화로에서 불멍한것도, 닭이 우는 소리에 깬것도, 밤줍고 고추딴것도 좋았다고 재잘거립니다. 아침에 일어나 새소리 들으며 커피한잔 하고 밤에 별보며 맥주한캔 한건 정말 선물이었습니다. 가족에게 큰 기억을 심어주셔서 감사드립니다~~^^"</p>
           <div class="review-date">2025년 10월 10일 · 에어비앤비</div>
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"위치가 매우 좋고, 조용하게 쉬기에 대만족이었어요. 밭에 상추며 고추며 직접 재배하신 무공해 야채들도 따다 먹고, 거실창으로 보이는 산의 푸르름이 쾌청하고 산새소리도 듣기 좋은 참으로 만족스러운 숙소였습니다. 호스트님의 배려와 친절 또한 이번 휴식에 큰 플러스가 되었습니다."</p>
           <div class="review-date">2018년 6월 · 네이버 지도</div>
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"두번째 방문입니다.. 사장님은 여전히 친절하셨구요^^ 한적하게 힐링하기엔 최적의 장소입니다.."</p>
           <div class="review-date">2018년 4월 · 네이버 지도</div>
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"동화속에 나오는 집 같아요 ㅠㅠ 숙소가 독채인데 아늑하니 너무 예뻤습니다 ㅜㅜ 마당이 넓어서 타프치고 주로 마당에서 놀았는데 조용하고…"</p>
           <div class="review-date">네이버 지도</div>
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"독채로 사용할 수가 있어서 조용히 우리만의 시간을 가질 수가 있어 좋았고, 사장님 내외 분들도 친절하셔서 좋았습니다."</p>
           <div class="review-date">2023년 7월 31일 · 네이버 지도</div>
           <div class="review-host">
@@ -1626,7 +1641,7 @@ footer {
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"포근한 집 같은 곳^^ 편안하게 조용히 잘 쉬고 왔습니다. 주인분도 친절하세요."</p>
           <div class="review-date">2023년 1월 27일 · 네이버 지도</div>
           <div class="review-host">
@@ -1636,13 +1651,13 @@ footer {
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"조용히 쉬기 좋은 곳입니다. 사장님 친절하시고 편히 쉬다가 왔어요. 관리 잘 되어 있습니다."</p>
           <div class="review-date">2022년 6월 4일 · 네이버 지도</div>
         </div>
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
-          <span class="review-room-tag">네이버</span>
+          <span class="review-room-tag tag-sol">솔솔하우스</span>
           <p class="review-text">"주인분들이 친절하시고 바베큐, 불멍하기에 좋았어요 ^^ 공기 맑은데서 푹 쉬고 싶어서 예약한 곳인데 새소리도 좋고 침대가 너무 푹신하고 따듯해…"</p>
           <div class="review-date">2021년 12월 11일 · 네이버 지도</div>
         </div>
