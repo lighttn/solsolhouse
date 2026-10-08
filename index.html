@@ -844,6 +844,28 @@ button { cursor: pointer; }
   display: flex;
   gap: 0.9rem;
 }
+/* 취소·환불 정책 표 */
+.refund {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  font-size: 0.82rem;
+}
+.refund dt {
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.refund dd {
+  color: var(--text-1);
+  font-weight: 500;
+  text-align: right;
+}
+.refund .free { color: var(--pine-2); }
+.refund .no   { color: #A8453A; }
+@media (max-width: 400px) {
+  .refund { font-size: 0.78rem; gap: 0.35rem 0.6rem; }
+}
 .booking-note-icon {
   font-size: 1rem;
   flex-shrink: 0;
@@ -1710,7 +1732,12 @@ footer {
             <span class="booking-note-icon">◑</span>
             <div>
               <strong>취소 · 환불 정책</strong>
-              <p>7일 전 취소 → 전액 환불<br>3일 전 취소 → 50% 환불<br>당일 취소 → 환불 불가</p>
+              <dl class="refund">
+                <dt>이용 8일 전까지</dt><dd class="free">수수료 없음</dd>
+                <dt>이용 7일 전</dt><dd>결제금액의 10% 차감</dd>
+                <dt>이용 6일 전</dt><dd>결제금액의 50% 차감</dd>
+                <dt>이용 5일 전 ~ 당일</dt><dd class="no">취소 불가</dd>
+              </dl>
             </div>
           </div>
         </div>
